@@ -19,7 +19,7 @@ function ModalCommentPost() {
   };
 
   return (
-    <div>
+    <div className='inputsContainer'>
       <div>
         <input
           type="text"

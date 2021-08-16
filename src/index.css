@@ -24,6 +24,7 @@ code {
   max-width: 768px;
   max-height: 100vh;
   position: relative;
+  padding: 20px 20px;
 }
 .header {
   margin: 20px auto;
@@ -34,10 +35,14 @@ code {
 .footer {
   position: fixed;
   bottom: 5%;
-  left: 47%;
+  left: 48%;
+  text-align: center;
   font-size: 14px;
   line-height: 16px;
   color: #cccccc;
+}
+.main {
+
 }
 .photos {
   list-style: none;
@@ -48,6 +53,11 @@ code {
 }
 .photos li {
   width: 237px;
+}
+@media (max-width: 760px) {
+  .photos {
+    justify-content: space-around;
+  }
 }
 li img {
   width: 100%;
@@ -128,14 +138,32 @@ li img {
   color: #000000;
   margin-bottom: 20px;
 }
+.inputsContainer {
+  max-width: 350px;
+}
+@media (max-width: 320px) {
+  .inputsContainer {
+    max-width: 276px;
+  }
+  .modalPhotoСomment {
+    display: block;
+  }
+  .modalImg {
+    margin-bottom: 50px;
+  }
+  .modalFilial {
+    max-width: 320px;
+    height: 100vh;
+  }
+}
 .input {
+  width: 100%;
   padding: 11px 7px;
-  width: 350px;
   margin-bottom: 20px;
   box-sizing: border-box;
 }
 button {
-  width: 350px;
+  width: 100%;
   background: #4997d0;
   border-radius: 3px;
   font-size: 13px;

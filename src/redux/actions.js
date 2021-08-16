@@ -54,7 +54,7 @@ export const upload = (id, name, text) => {
       },
     })
       .then((response) => response.json())
-      .then((json) => {
+      .then(() => {
         dispatch({
           type: "comments/upload/success",
           payload: {
